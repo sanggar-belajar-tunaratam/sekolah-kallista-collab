@@ -1120,7 +1120,7 @@
 
     <!-- Audio Control Button -->
     <div class="audio-control" id="audioControl" style="display: none;">
-        <span class="audio-label" id="audioLabel">Musik: Aktif</span>
+        <span class="audio-label" id="audioLabel">Music: On</span>
         <button class="audio-btn" id="audioBtn" aria-label="Toggle music" title="Toggle background music">
             <!-- Playing icon with sound waves -->
             <div class="sound-waves icon-playing">
@@ -1532,10 +1532,10 @@
             function updateAudioUI() {
                 if (state.isMusicPlaying && !state.isMuted) {
                     elements.audioBtn.classList.remove('muted');
-                    elements.audioLabel.textContent = 'Musik: Aktif';
+                    elements.audioLabel.textContent = 'Music: On';
                 } else {
                     elements.audioBtn.classList.add('muted');
-                    elements.audioLabel.textContent = 'Musik: Mati';
+                    elements.audioLabel.textContent = 'Music: Off';
                 }
             }
 
